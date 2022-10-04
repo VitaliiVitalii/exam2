@@ -1,0 +1,94 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.banner-slider {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    max-height:800px;
+    position: relative;
+    margin: 0 auto;
+    top: -110px;
+    left: 0;
+
+    &__slide {
+        text-align: center;
+        background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 98px;
+        letter-spacing: 0.1em;
+
+        @include media ($md) {
+            font-size: 60px;
+
+        }
+
+        @include media ($sm) {
+            font-size: 40px;
+
+        }
+
+    }
+
+    &__subtitle {
+        line-height: 22px;
+        letter-spacing: 0.3em;
+
+        @include media ($sm) {
+            font-size: 12px;
+        
+        }
+
+    }
+
+}
+
+.banner-slider__slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;      
+
+}
+
+.text-wrapper {
+    color: $secondary;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.swiper-vertical>.swiper-pagination-bullets{
+    right: 50px;
+
+}
+
+.swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 40px 0;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid $secondary;
+    opacity: 1;
+    background-color: transparent;
+    margin: 40px 0;
+
+    
+} 
+
+.swiper-pagination-bullet-active {
+margin: 40px;
+    background-color: wheat;
+
+}

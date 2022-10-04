@@ -1,0 +1,42 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.news {
+
+    &__projects {
+        background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+        padding-bottom: 170px;
+        padding-top: 150px;
+
+    }
+
+    &__title {
+        margin-bottom: 70px;
+        color: $secondary;
+
+        &::before {
+            content: "";
+            background-color: $secondary;
+            height: 1px;
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            position: relative;
+            top: -30px;
+        
+        }
+        
+    }
+
+    &__slider {
+
+        &-slide {
+            background-color: $secondary;
+            max-width: 370px;
+            width: 100%;
+
+        }
+
+    }
+}
+

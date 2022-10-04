@@ -1,0 +1,156 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+@use '../../scss/blocks/news' as *;
+
+
+.main {
+    flex: 1 1 auto;
+    padding-top: 20px;
+
+}
+
+.projects {
+
+    &__title {
+        padding-bottom: 150px;
+
+        &::before {
+            content: "";
+            background-color:$primary;
+            height: 1px;
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            position: relative;
+            top: -30px;
+
+        }
+
+    }
+
+    &__inner {
+        margin-bottom: 175px;
+
+    }
+
+    &__pic {
+        position: relative;
+        max-width:845px;
+        width: 100%;
+
+        @include media ($md) {
+            max-width: 650px;
+        
+        }
+
+        &-item {
+            position: relative;
+            bottom: 0;
+            right: 0;
+
+            @include media ($md) {
+                max-width: 450px;
+        
+            }
+
+        }
+
+        &-bg {
+            display: inline-block;
+            max-width: 585px;
+            width: 100%;
+            height: 470px;
+            background: #55B7FF;
+            position: absolute;
+            z-index: -1;
+            top: -60px;
+            left: -215px;
+
+        }
+
+    }
+
+    &__info {
+        margin-top: auto;
+
+        &-subtitle {
+            font-size: 22px;
+            line-height: 27px;
+            text-transform: uppercase;
+            max-width: 480px;
+            width: 100%;
+
+        }
+        
+        &-title {
+            text-align: left;
+
+        }
+
+        &-text {
+            padding-top: 20px;
+            font-family: $font-secondary;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 40px;
+
+        }
+
+        &-adress {
+            font-family: $font-secondary;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color:$black-default;
+            padding-top: 72px;
+            padding-bottom: 30px;
+
+        }
+
+    }
+
+}
+
+.first-projects {
+    padding-left: 70px;
+
+        @include media ($md) {
+            padding-left: 40px;
+    
+        }
+
+}
+
+.second-projects {
+    padding-right: 45px;
+
+        @include media ($md) {
+            padding-left: 40px;
+    
+        }
+
+    &__bg {
+        top: -60px;
+        left: 260px;
+        background: #7E5AFF;
+
+    }
+
+}
+
+.map {
+
+    &__image {
+        width: 100%;
+        object-fit: contain;
+
+    }
+
+}
+
+
+
+
+

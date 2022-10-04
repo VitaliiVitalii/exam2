@@ -1,0 +1,25 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.footer {
+    background: url(./img/bg/footer_bg.jpg) 0 0 no-repeat;
+    height: 550px;
+    background-size: cover;
+    font-size: 18px;
+    line-height: 27px;
+    color: $black-default;
+
+    &__form {
+        max-width: 770px;
+        margin: 0 auto;
+        padding: 90px 60px 110px;
+        background-color: $secondary;
+
+    }
+
+    &__title {
+        padding-bottom: 40px;
+        
+    }
+
+}

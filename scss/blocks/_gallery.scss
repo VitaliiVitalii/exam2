@@ -1,0 +1,58 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.gallery {
+
+    &__conteiner {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+
+    &__title {
+        padding-bottom: 95px;
+
+        &::before {
+            content: "";
+            background-color: $primary;
+            height: 1px;
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            position: relative;
+            top: -30px;
+    
+        }
+
+    }
+
+    &__wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: minmax(100px, 1fr);
+        grid-column-gap: 1%;
+        justify-items: stretch;
+        align-items: stretch;
+        margin-bottom: 70px;
+
+    }
+
+    &__btn {
+        text-align: center;
+
+    }
+
+    &__item {
+        & img {
+            object-fit: cover;
+            width: 100%;
+
+        }
+
+    }
+
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+
+}

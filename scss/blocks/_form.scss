@@ -1,0 +1,87 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.form {
+
+    &__group {
+        position: relative;
+        margin: 0 0 30px 0;
+        width: 470px;
+    }
+
+    &__input {
+        font-family: $font-secondary;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        opacity: 0.5;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $primary;
+        background-color: transparent;
+        outline: none;
+        transition: 0.3s;
+        padding: 0 0 5px 0;
+        margin: 0 0 15px 0;
+
+        &:focus {
+            border-bottom: 1px solid $secondary;
+            color: $black-default;
+
+        }
+
+    }
+
+    &__label {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        transition: all 0.3s;
+
+    }
+
+    &__button {
+        border: none;
+        cursor: pointer;
+        background-color: $bg;
+        font-family: $font-primary;
+
+        @include media($mob) {
+            left: 33%;
+
+        }
+
+        @include media($mob) {
+            left: 25%;
+
+        }
+
+    }
+
+}
+
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown)~.form__label {
+    color: $secondary;
+    top: -18px;
+    font-size: 12px;
+
+}
+
+.contacts {
+
+    &__adress {
+        padding-bottom: 40px;
+    }
+
+    &__tele {
+        padding-bottom: 40px;
+    }
+
+    &__email {
+        padding-bottom: 40px;
+    }
+
+}

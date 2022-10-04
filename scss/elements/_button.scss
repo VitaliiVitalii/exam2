@@ -1,0 +1,23 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.btn {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:$black-default;
+    text-transform: uppercase;
+    border: 1px solid $primary;
+    padding: 15px 40px;
+
+}
+
+.point {
+    width:9px;
+    height:14px;
+    
+}
+
+
+

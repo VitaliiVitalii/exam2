@@ -1,0 +1,37 @@
+/**********  Fonts  **********/
+$font-primary:      'Montserrat', sans-serif;
+$font-secondary:    'Open Sans', sans-serif;
+$font-uncommon:     'Source Sans Pro', sans-serif;
+$font-size-default: 18px;
+
+/********* Colors ***********/
+$primary:         #2C4058;
+$secondary:       #FFFFFF;
+$black-default:   #000000;
+$bg:              #E5E5E5;
+
+/********  Widths ***********/
+$width: 1600px;
+$content-width: 1170px;
+
+/********  Breakpoints ******/
+$lg: 1440px;
+$md: 991px;
+$sm: 768px;
+$sm-max: $sm - 1px;
+$mob: 375px;
+
+/***** Padding ******/
+$sm-padding: 10px;
+$md-padding: 35px;
+$lg-padding: 215px;
+
+/***** Z-index ******/
+$ground: 0;
+$z-header:10;
+$z-main:$ground + 1;
+$menu-icon: $z-header + 1;
+
+
+
+

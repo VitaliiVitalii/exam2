@@ -1,0 +1,17 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.radio {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $secondary;
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+    
+    @include media ($md) {
+        display: none;
+
+    }
+
+}

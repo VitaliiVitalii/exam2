@@ -1,0 +1,32 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.header {
+
+    width: 100%;
+
+    &__wrapper {
+        padding-top: 55px;
+
+        @include media ($md) {
+            padding: 15px $md-padding;
+
+        }
+    }
+
+    &__row {
+        align-items: center;
+        justify-content: space-between;
+        
+        @include media ($sm) {
+            padding: 0 0 0 0;
+    
+        }
+
+    }
+
+}
+
+
+
+

@@ -1,0 +1,26 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.logo {
+    z-index: $z-header;
+
+    &__item{
+        max-width: 240px;
+        width: 100%;
+
+    }
+}
+
+@include media ($sm) {
+    .logo {
+        z-index: $z-header;
+
+        &__item {
+            max-width: 170px;
+            width: 100%;
+
+        }
+
+    }
+
+}
