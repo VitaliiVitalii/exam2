@@ -640,11 +640,11 @@ body {
 }
 
 .swiper-button-prev {
-  background-image: url(../../blocks.scss);
+  background-image: url(../img/newsSlider/Left.png);
 }
 
 .swiper-button-next {
-  background-image: url(../../img/newsSlider/Right.png);
+  background-image: url(../img/newsSlider/Right.png);
 }
 
 .new__slider-buttons {
